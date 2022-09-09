@@ -12,15 +12,26 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>-->
+
     <style name="noActionBar" parent="Theme.IslamiBook">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
     </style>
-    
+
     <style name="bottom_navigation_them">
         <item name="android:background">@color/colorGold</item>
     </style>
+
+    <style name="Theme.IslamiBook.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IslamiBook.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IslamiBook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

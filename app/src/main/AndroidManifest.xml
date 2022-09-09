@@ -14,10 +14,15 @@
         android:theme="@style/Theme.IslamiBook"
         tools:targetApi="31">
         <activity
+            android:name=".ui.suraDetails.SuraDetailsActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:label="@string/title_activity_sura_details"
+            android:theme="@style/Theme.IslamiBook.NoActionBar" />
+        <activity
             android:name=".ui.splash.SplashActivity"
             android:exported="true"
-            android:theme="@style/noActionBar"
-            >
+            android:theme="@style/noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,10 +32,7 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true"
-            android:theme="@style/noActionBar"
-            >
-
-        </activity>
+            android:theme="@style/noActionBar"></activity>
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ class HadethDetailsActivity : AppCompatActivity() {
         //
 
         titleTextView=findViewById(R.id.title_text_view)
-        titleTextView?.text
+        titleTextView?.text="اسلامى"
 
         initRecyclerView()
 

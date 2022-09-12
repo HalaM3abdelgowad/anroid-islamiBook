@@ -19,7 +19,7 @@ class VersesAdapter :RecyclerView.Adapter<VersesAdapter.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val content :String? =items?.get(position)
-        holder.content.setText(content)
+        holder.content.setText(content+"{${position+1}}")
     }
 
     override fun getItemCount(): Int =items?.size ?: 0 ///return size and when be null return 0

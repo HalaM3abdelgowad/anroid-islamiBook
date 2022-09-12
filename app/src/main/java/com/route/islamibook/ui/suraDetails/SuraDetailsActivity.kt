@@ -21,7 +21,7 @@ class SuraDetailsActivity : AppCompatActivity() {
         ///for appear back button
 
         setSupportActionBar(findViewById(R.id.toolbar))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         //
 
         titleTextView=findViewById(R.id.title_text_view)

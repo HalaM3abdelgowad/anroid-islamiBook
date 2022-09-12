@@ -7,6 +7,8 @@ object Constants {
 
         val EXTRA_SURA_NAME="name"
         val EXTRA_SURA_POSITION ="pos"
+        val EXTRA_HADETH_NAME="hadethName"
+        val EXTRA_HADETH_POSITION ="HadethPos"
 
 }
 

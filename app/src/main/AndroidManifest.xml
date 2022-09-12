@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.route.islamibook">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,12 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamiBook"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        >
+        <activity
+            android:name=".ui.hadethDetails.HadethDetailsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_hadeth_details"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/Theme.IslamiBook.NoActionBar"
+            />
         <activity
             android:name=".ui.suraDetails.SuraDetailsActivity"
             android:exported="true"
-            android:parentActivityName=".ui.home.HomeActivity"
             android:label="@string/title_activity_sura_details"
+            android:parentActivityName=".ui.home.HomeActivity"
             android:theme="@style/Theme.IslamiBook.NoActionBar" />
         <activity
             android:name=".ui.splash.SplashActivity"
@@ -32,7 +41,7 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true"
-            android:theme="@style/noActionBar"></activity>
+            android:theme="@style/noActionBar" />
     </application>
 
 </manifest>

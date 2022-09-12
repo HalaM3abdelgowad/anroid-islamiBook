@@ -11,7 +11,7 @@ import com.route.islamibook.ui.Constants
 class SuraDetailsActivity : AppCompatActivity() {
 
     lateinit var titleTextView: TextView
-    lateinit var recyclerView: RecyclerView
+     lateinit var recyclerView: RecyclerView
     lateinit var adapter: VersesAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,11 +50,11 @@ class SuraDetailsActivity : AppCompatActivity() {
     private fun readSuraFile(pos: Int) {
         //pos+1.text=number of file suraname
     val fileName="${pos+1}.txt" //int+string
-        val fileContant=assets.open(fileName)
-            .bufferedReader().use { it.readText() } //read file as one string
+        val fileContant=(assets.open(fileName)
+            .bufferedReader().use { it.readText() }) //read file as one string
     /// convert string to lines
     //El Ayat >>> verses
-    val verses:List<String> =fileContant.split("\n")//split by backslash n
+    val verses:List<String> =fileContant.split("\n")  //split by backslash n
         adapter.changeData(verses)
     }
 

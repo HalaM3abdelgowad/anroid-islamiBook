@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.suraDetails.SuraDetailsActivity"
+    tools:context=".ui.hadethDetails.HadethDetailsActivity"
     android:background="@drawable/main_background"
     >
 
@@ -16,7 +16,7 @@
         android:theme="@style/Theme.IslamiBook.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/hadeth_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorTransparent"
@@ -49,6 +49,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_sura_details" />
+    <include layout="@layout/content_hadeth_details" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

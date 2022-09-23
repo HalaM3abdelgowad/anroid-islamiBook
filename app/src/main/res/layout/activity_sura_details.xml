@@ -30,17 +30,18 @@
                     android:id="@+id/title_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    tools:text="اسلامى"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="30sp"
                     android:gravity="center"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.426"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
 
-                    />
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="اسلامى" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
